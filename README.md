@@ -1,1 +1,1 @@
-Repository for Turkcell Geleceği Yazanlar courses and studies.
+Repository for Turkcell Geleceği Yazanlar courses, studies and reviews.
