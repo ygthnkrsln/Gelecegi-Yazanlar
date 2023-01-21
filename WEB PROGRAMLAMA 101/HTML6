@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>STYLES IN HTML</title>
+    </head>
+    <body bgcolor="red" text="red">
+        <h3 align="center">ESKISEHIR TECHNICAL UNIVERSITY</h3>
+        <h3 align="center">ENGINEERING FACULTY</h3>
+        <h3 align="center">COMPUTER ENGINEERING</h3>
+    </body>
+</html>

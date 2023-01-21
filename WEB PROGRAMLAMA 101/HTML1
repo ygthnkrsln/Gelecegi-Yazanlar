@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A simple HTML title</title> 
+    <meta http-equiv="Content-type" content="Text/html"; charset="UTF8">
+    <meta name="keywords" content="computer languages, coding languages, coding">
+    <meta name="description" content="This website has informations about coding and stuff.">
+    <meta name="Author" content="Yiğithan KARAASLAN, forbequem@gmail.com">
+  </head>
+
+  <body>
+    <h1>HTML is the language of Web.</h1>
+    <p>This is the first paragraph of the text.</p>
+    <p>This is the second paragraph of the text.</p>
+  </body>
+</html>

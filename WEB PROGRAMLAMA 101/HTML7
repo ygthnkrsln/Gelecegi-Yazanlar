@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TABLE APPLICATION</title>
+  </head>
+  <body>
+    <table border="2">
+      <!-- tablo tanımı başlangıcı -->
+      <caption>
+        <b><i><u>COUNTRIES AND THEIR POPULATIONS</u></i></b>
+      </caption>
+
+      <!-- başlık tanımı -->
+      <tr>
+        <!-- başlık satırı tanımı -->
+        <th>COUNTRY NAME</th>
+        <th>POPULATION</th>
+      </tr>
+
+      <!-- başlık satırı tanımının sonu -->
+      <tr>
+        <!-- ilk satır tanımı -->
+        <td>AUSTRIA</td>
+        <td>8,000,000</td>
+      </tr>
+      <tr>
+        <!-- ilk satır tanımının sonu -->
+      </tr>
+
+      <tr>
+        <td>GERMANY</td>
+        <td>80,000,000</td>
+      </tr>
+      <tr>
+        <!-- son satır tanımının başlangıcı -->
+        <td>TURKEY</td>
+        <td>73,000,000</td>
+      </tr>
+
+      <!-- son satır tanımının sonu -->
+    </table>
+    
+    <table border="2" cellspacing="0" cellpadding="5" align="left" bgcolor="ffcbf0">
+        <tr>
+            <td>ONE CELL TABLE</td>
+        </tr>
+    </table>Lorem ipsum dolor sit amet consectetur, adipisicing <br>
+    elit. Nisi doloremque deleniti velit <br>
+    odio laborum, vel dolore. Magnam, corporis!
+  </body>
+</html>

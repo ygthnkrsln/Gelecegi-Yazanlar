@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A SIMPLE HTML TEXT</title>
+  </head>
+  <body>
+    <h3>PROGRAMMING LANGUAGES</h3>
+    <ul>
+      <li>Fortran</li>
+      <li>Cobol</li>
+      <li>Basic</li>
+      <li>Pascal</li>
+      <li>C/C++</li>
+    </ul>
+    <ol>
+      <li>Fortran</li>
+      <li>Cobol</li>
+      <li>Basic</li>
+      <li>Pascal</li>
+      <li>C/C++</li>
+    </ol>
+    <h3>BIG CITIES IN TURKEY</h3>
+    <ul>
+      <li>Most important districts of Istanbul</li>
+    <ul>
+        <li>Fatih</li>
+        <li>Bakirköy</li>
+        <li>Kadiköy</li>
+    </ul>
+    <li>Most important districts of Ankara</li>
+    <ul>
+        <li>Çankaya</li>
+        <li>Yenimahalle</li>
+    </ul>
+  </body>
+</html>

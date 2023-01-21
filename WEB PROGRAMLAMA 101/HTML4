@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>COUNTRIES AND POPULATIONS</title>
+  </head>
+  <body>
+    <h3>COUNTRIES AND POPULATIONS</h3>
+    <p><hr>
+      <i>Austria is a Middle Europe country </i><br />which has 8 million populations.
+      German is its official language. Because of <b>its natural beauties</b>
+      <br /><s>Austria is one of the beautiful countries.</s>
+    </p>
+    <p><hr>
+      Hungary is <u>an another Middle Europe </u><br />
+      country It has 10 million population. Even though its neigbours has <br />
+      lots of mountains, Hungary is famous with flat plains and horses.
+    </p>
+    <a href="http://gelecegiyazanlar.turkcell.com.tr" target="_blank">Turkcell Geleceği Yazanlar</a>
+  </body>
+</html>

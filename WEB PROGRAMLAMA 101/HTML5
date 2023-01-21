@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PICTURES IN HTML</title>
+  </head>
+  <body>
+    <h3>PICTURES IN HTML</h3>
+    <img
+      src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg"
+      alt="Alternative text for picture"
+      border="3"
+    />
+    <a href="https://gelecegiyazanlar.turkcell.com.tr"
+      >Geleceği Yazanlar
+      <img
+        src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/2014_degerlendirme.jpg"
+        alt="Geleceği Yazanlar Ana Sayfa"
+        width="100"
+        height="100"
+        border="3"
+      />
+    </a>
+  </body>
+</html>

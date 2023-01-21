@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>COUNTRIES AND THEIR POPULATIONS</title>
+  </head>
+  <body>
+    <h3>TURKEY - CITIES</h3>
+    <h3>COUNTRIES AND THEIR POPULATIONS</h3>
+    <pre>
+        COUNTRY NAME            POPULATIONS (MILLION)
+        TURKEY                  65
+        AUSTRIA                 8
+        USA                     230
+        GERMANY                 80
+        <a href="X.htm">CLICK FOR MORE INFORMATION</a>
+    </pre>
+  </body>
+</html>
