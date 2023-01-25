@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function KOPYA() {
+                document.getElementById("alan2").value=document.getElementById("alan1").value;
+                document.getElementById("alan3").value=document.getElementById("alan1").value;
+            }
+        </script>
+        <script>
+            function SILME() {
+                document.getElementById("alan2").value=null;
+                document.getElementById("alan3").value=null;
+            }
+        </script>
+    </head>
+    <body>
+        1. ALAN: <input type="text" id="alan1" value="GUZEL YURDUM TURKIYE..."><br>
+            2. ALAN: <input type="text" id="alan2"><br>
+                3. ALAN: <input type="text" id="alan3"><br><br>
+        <button onclick="KOPYA()">METNI KOPYALA</button>
+        <button onclick="SILME()">METNI SIL</button>
+
+        <p>Metni kopyala düğmesi tiklaninca 1 alanindan 2 ve 3 alanina kopyalama yapiliyor.</p>
+        <p>Metni sil düğmesi tiklaninca 2 ve 3 alanlari siliniyor.</p>
+    </body>
+</html>
