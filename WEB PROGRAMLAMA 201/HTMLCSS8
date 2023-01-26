@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAYMA</title>
+    <script>
+      function SAY() {
+        for (var i = 0; i <= 10000; i++) {
+          var j = i;
+        }
+        alert("ITERASYON SAYISI = " + j);
+      }
+
+      function MESAJ() {
+        alert("GUZEL TURKIYEM...");
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" onclick="SAY();" value="SAYMA" />
+    <input type="button" onclick="MESAJ();" value="MESAJ">
+  </body>
+</html>

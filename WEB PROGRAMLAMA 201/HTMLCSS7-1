@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <body>
+        <div id="YIGITHAN"></div>
+        <script>
+            if (typeof(Storage) != "undefined") {
+                localStorage.setItem("SOYAD", "KARAASLAN");
+                document.getElementById("YIGITHAN").innerHTML = localStorage.getItem("SOYAD");
+            } else {
+                document.getElementById("YIGITHAN").innerHTML = "TARAYICINIZ WEB STORAGE OZELLIGI YOK";
+            }
+        </script>
+    </body>
+</html>

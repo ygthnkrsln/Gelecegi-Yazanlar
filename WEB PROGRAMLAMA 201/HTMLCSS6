@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      #KUTU1,
+      #KUTU2 {
+        float: left;
+        padding: 10px;
+        margin: 10px;
+        -moz-user-select: none;
+      }
+
+      #KUTU1 {
+        background-color: #6633ef;
+        width: 85px;
+        height: 85px;
+      }
+
+      #KUTU2 {
+        background-color: #ff6699;
+        width: 160px;
+        height: 170px;
+      }
+    </style>
+    <script type="text/javascript">
+      function dragStart(ev) {
+        ev.dataTransfer.effectAllowed = "move";
+        ev.dataTransfer.setData("Text", ev.target.getAttribute("id"));
+        ev.dataTransfer.setDragImage(ev.target, 0, 0);
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>SURUKLE BIRAK - HTML5</h2>
+      <div>UYGULA</div>
+      <div id="KUTU1" draggable="true" ondragstart="return dragStart(event)">
+        <p>SURUKLE</p>
+      </div>
+      <div id="KUTU2"></div>
+    </center>
+  </body>
+</html>

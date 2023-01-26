@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function SAYAC_TIKLA() {
+        if (typeof Storage !== "TANIMSIZ") {
+          if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+          } else {
+            sessionStorage.clickcount = 1;
+          }
+          document.getElementById("SONUC").innerHTML =
+            "BU OTURUMDA DUGMEYE " +
+            sessionStorage.clickcount +
+            " KEZ BASTINIZ.";
+        } else {
+          document.getElementById("SONUC").innerHTML =
+            "TARAYICINIZ BU NESNEYI DESTEKLEMIYOR";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p><button onclick="SAYAC_TIKLA()" type="button">TIKLAYINIZ</button></p>
+    <div id="SONUC"></div>
+    <p>SAYACI ARTIRMAK ICIN TIKLAYINIZ</p>
+    <p>TARAYICI VEYA PENCEREYI KAPATARAK YENIDEN DENEYINIZ</p>
+  </body>
+</html>

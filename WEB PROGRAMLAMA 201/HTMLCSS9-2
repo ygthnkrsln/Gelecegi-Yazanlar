@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form autocomplete="off">
+      AD: <input type="text" name="AD" /><br />
+      SOYAD: <input type="text" name="SOYAD" /><br />
+      E-mail: <input type="email" name="E-MAIL" /><br />
+      <input type="submit" value="Sorguyu gönder" />
+    </form>
+    <p>FORMU DOLDURUNUZ.</p>
+
+    <hr size="5" color="black" />
+    <form novalidate>
+      E-mail: <input type="email" name="KUL_email" />
+      <input type="submit" value="Sorguyu gönder" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      AD: <input type="text" name="ad" autofocus /><br />
+      SOYAD: <input type="text" name="sad" /><br />
+      <input type="submit" value="Sorguyu gönder" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form id="form1">
+      AD: <input type="text" name="ad" /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+    <p>SOYAD ALANI FORMUN DISINDADIR ANCAK HALA FORMUN PARCASIDIR</p>
+    SOYAD: <input type="text" name="soyad" form="form1" />
+    <hr size="5" color="black" />
+
+    <form>
+        AD: <input type="text" name="ad"><br>
+        SOYAD: <input type="text" name="sad"><br>
+        <input type="submit" value="Gönder"><br>
+        <input type="submit" formaction="sec.html" value="Sunucu müdahale">
+    </form>
+    <p><b>NOT: </b>INTERNET EXPLORER formaction'I DESTEKLEMIYOR</p>
+    <hr size="5" color="black">
+
+    <form method="get">
+        AD: <input type="text" name="ad"><br>
+        SOYAD: <input type="text" name="sad"><br>
+        <input type="submit" value="Gönder">
+        <input type="submit" formmethod="post" formaction="HTMLCSS9-2-1" value="POST ILE GONDER">
+        <p><b>NOT: </b>formmethod özelliği Internet Explorer 9 ve önceki sürümlerde desteklenmemektedir.</p>
+    </form>
+  </body>
+</html>

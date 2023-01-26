@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VERIYI BELLEKTE SAKLA</title>
+    <script>
+      function sendData() {
+        var ANAHTAR = document.getElementById("ANAHTAR").value;
+        var DEGER = document.getElementById("DEGER").value;
+        localStorage.setItem(ANAHTAR, DEGER);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>VERIYI YEREL BELLEKTE SAKLA</h1>
+    <form>
+      <div>
+        <label for="ANAHTAR">ANAHTAR: </label>
+        <input type="text" name="ANAHTAR" id="ANAHTAR" placeholder="ANAHTAR" />
+      </div>
+      <div>
+        <label for="DEGER">DEGER: </label>
+        <input type="text" name="DEGER" id="DEGER" placeholder="DEGER" />
+      </div>
+      <button type="submit" onclick="sendData()">VERIYI GONDER</button>
+    </form>
+  </body>
+</html>

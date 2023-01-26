@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div id="temas-form">
+      <form id="temas" method="post" action="">
+        <fieldset>
+          <label for="ad">Ad</label>
+          <input type="text" ad="ad" />
+
+          <label for="email">E-mail</label>
+          <input type="text" ad="email" />
+
+          <label for="telefon">Telefon</label>
+          <input type="text" ad="telefon" />
+
+          <label for="website">Website</label>
+          <input type="text" ad="url" />
+
+          <label for="mesaj">Soru/Yorum</label>
+          <textarea ad="mesaj"></textarea>
+
+          <input type="submit" ad="submit" id="submit" value="Mesaj Gonder" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
