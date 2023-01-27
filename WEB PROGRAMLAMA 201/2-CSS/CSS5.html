@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function GOSTER(kitap) {
+        var kitapTipi = kitap.getAttribute("data-kitap-tip");
+        alert(
+          "" +
+            kitap.innerHTML +
+            " TURUNDE BIR KITAP " +
+            kitapTipi +
+            "'LARDAN OLUSUR."
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <h1>KITAPLAR</h1>
+    <p>Kitaplar icin tikla:</p>
+
+    <ul>
+      <li onclick="GOSTER(this)" id="ro" data-kitap-tip="ROMAN">ROMAN</li>
+      <li onclick="GOSTER(this)" id="an" data-kitap-tip="ANI">ANI</li>
+      <li onclick="GOSTER(this)" id="si" data-kitap-tip="SIIR">SIIR</li>
+    </ul>
+  </body>
+</html>

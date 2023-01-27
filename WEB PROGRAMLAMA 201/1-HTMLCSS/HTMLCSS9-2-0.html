@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <hr size="5" color="black">
+    <form autocomplete="off">
+      AD: <input type="text" name="AD" /><br />
+      SOYAD: <input type="text" name="SOYAD" /><br />
+      E-mail: <input type="email" name="E-MAIL" /><br />
+      <input type="submit" value="Sorguyu gönder" />
+    </form>
+    <p>FORMU DOLDURUNUZ.</p>
+
+    <hr size="5" color="black" />
+    <form novalidate>
+      E-mail: <input type="email" name="KUL_email" />
+      <input type="submit" value="Sorguyu gönder" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      AD: <input type="text" name="ad" autofocus /><br />
+      SOYAD: <input type="text" name="sad" /><br />
+      <input type="submit" value="Sorguyu gönder" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form id="form1">
+      AD: <input type="text" name="ad" /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+    <p>SOYAD ALANI FORMUN DISINDADIR ANCAK HALA FORMUN PARCASIDIR</p>
+    SOYAD: <input type="text" name="soyad" form="form1" />
+    <hr size="5" color="black" />
+
+    <form>
+      AD: <input type="text" name="ad" /><br />
+      SOYAD: <input type="text" name="sad" /><br />
+      <input type="submit" value="Gönder" /><br />
+      <input type="submit" formaction="sec.html" value="Sunucu müdahale" />
+    </form>
+    <p><b>NOT: </b>INTERNET EXPLORER formaction'I DESTEKLEMIYOR</p>
+    <hr size="5" color="black" />
+
+    <form method="get">
+      AD: <input type="text" name="ad" /><br />
+      SOYAD: <input type="text" name="sad" /><br />
+      <input type="submit" value="Gönder" />
+      <input
+        type="submit"
+        formmethod="post"
+        formaction="HTMLCSS9-2-1"
+        value="POST ILE GONDER"
+      />
+      <p>
+        <b>NOT: </b>formmethod özelliği Internet Explorer 9 ve önceki sürümlerde
+        desteklenmemektedir.
+      </p>
+    </form>
+    <hr size="5" color="black" />
+
+    <form action="#">
+      AD: <input type="text" name="ad" /><br />
+      SOYAD: <input type="text" name="sad" /><br />
+      <input type="submit" value="Gönder" />
+      <input type="submit" formtarget="_new" value="YENI PENCERE - GONDER" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      <input list="ülkeler" name="ülke" />
+      <datalist id="ülkeler">
+        <option value="Türkiye"></option>
+        <option value="Almanya"></option>
+        <option value="İngiltere"></option>
+        <option value="Fransa"></option>
+        <option value="İtalya"></option>
+      </datalist>
+      <input type="submit" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      2000-01-01'den önceki bir tarih girin:
+      <input type="date" name="bgun" max="1999-12-31" /><br />
+      2010-01-01'den sonraki bir tarih girin:
+      <input type="date" name="bgun" min="2010-01-02" /><br />
+      MİKTAR (1-10):
+      <input type="number" name="miktar" min="1" max="10" /><br />
+      <input type="submit" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      RESIM SEC: <input type="file" name="img" multiple />
+      <input type="submit" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      ULKE KODU:
+      <input
+        type="text"
+        name="u_kod"
+        pattern="[A-z a-z]{3}"
+        title="Üç harflik kod"
+      />
+      <input type="submit" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      <input type="text" name="ad" placeholder="ADI..." /><br />
+      <input type="text" name="sad" placeholder="SOYADI..." /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      KULLANICI ADI: <input type="text" name="kad" required />
+      <input type="submit" />
+    </form>
+    <hr size="5" color="black" />
+
+    <form>
+      <input type="number" name="xx" step="2" min="-20" max="40">
+      <input type="submit">
+    </form>
+    <hr size="5" color="black">
+
+  </body>
+</html>
