@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript İlk Uygulama</title>
+        <script>
+            document.writeln("<font color='red'><h2>Örnek Web Sayfası</h2></font>");
+            document.writeln("<font color='green'><h2>Örnek <br> Web Sayfası</h2></font>");
+            window.alert("30.01.2023\nESTÜ\nBilgisayar Mühenidisliği Bölümü");
+
+            var fiyat, miktar, tutar, fiy, mik;
+            fiyat = window.prompt("Fiyatı giriniz: ", "0");
+            miktar = window.prompt("Miktarı giriniz", "0");
+            fiy = parseInt(fiyat);
+            mik = parseInt(miktar);
+            tutar = fiy * mik;
+            document.writeln("<h2>Fiyat = " + fiyat + "</h2>");
+            document.writeln("<h2>Miktar = " + miktar + "</h2>");
+            document.writeln("<h2>Tutar = " + tutar + "</h2>");
+
+            var x = 10;
+            var y = 3;
+            var z = x * y + 2 / x * y + x % 3 * y;
+            document.writeln("<h2>z = " + z + "</h2>");
+            document.writeln("<h2>x = " + x + "</h2>");
+            document.writeln("<h2>y = " + y + "</h2>");
+
+        </script>
+    </head>
+    <body></body>
+</html>
