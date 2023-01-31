@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>For Uygulaması</title>
+  </head>
+  <body bgcolor="lightgreen" text="navy">
+    <font face="Comic Sans MS">
+      <script language="javascript">
+        document.writeln("<table border = '2' width = '50%'>");
+        document.writeln("<tr><td width = '80'><b>Sayı</b></td>");
+        document.writeln("<td><b>SAYININ KARESİ</b></td>");
+        document.writeln("<td><b>SAYININ KÜPÜ</b></td></tr>");
+
+        for (var i = 1; i <= 15; ++i) {
+          kare = i * i;
+          küp = kare * i;
+          document.writeln(
+            "<tr><td>" +
+              i +
+              "</td><td>" +
+              kare +
+              "</td><td>" +
+              küp +
+              "</td></tr>"
+          );
+        }
+        document.writeln("</table>");
+      </script>
+    </font>
+  </body>
+</html>

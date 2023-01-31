@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript">
+      var say, toplam, ort;
+      say = 1;
+      toplam = 0;
+
+      do {
+        toplam += say;
+        say++;
+      } while (say < 6);
+      ort = toplam / (say - 1);
+
+      document.write("<h3>Sayıların toplamı = " + toplam + "</h3>");
+      document.write("<h3>Sayıların ortalaması = " + ort + "</h3>");
+    </script>
+  </head>
+</html>

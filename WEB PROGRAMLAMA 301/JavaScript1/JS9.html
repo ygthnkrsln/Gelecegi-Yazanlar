@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript">
+      var i, toplam, n, m, ort;
+      m = window.prompt("Üst sınırı giriniz (n sayısı): ", "0");
+      n = parseInt(m);
+      toplam = 0;
+
+      for (i = 1; i <= n; i++) {
+        toplam += i;
+        ort = toplam / n;
+      }
+
+      document.write("<h3>Sayıların ortalaması = " + toplam + "</h3>");
+      document.write("<h3>Sayıların ortalaması = " + ort + "</h3>");
+    </script>
+  </head>
+</html>

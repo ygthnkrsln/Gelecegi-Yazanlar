@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript">
+      var a, b;
+      a = window.prompt("A sayısı: ", "0");
+      b = window.prompt("B sayısı: ", "0");
+
+      document.writeln("<h3>A ve B sayılarının karşılaştırılması</h3>");
+      document.writeln("<table border='3' width='100%'>");
+        
+      if (a == b) document.writeln("<tr><td>" + a + " == " + b + "</td></tr>");
+      else if (a < b)
+        document.writeln("<tr><td>" + a + " < " + b + "</td></tr>");
+      else document.writeln("<tr><td>" + a + " > " + b + "</td></tr>");
+      document.writeln("</table>");
+    </script>
+  </head>
+</html>

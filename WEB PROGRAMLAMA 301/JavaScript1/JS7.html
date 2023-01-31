@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body text="blue" bgcolor="pink">
+    <script language="javascript">
+      var say, sayac, toplam;
+      say = window.prompt(
+        "Bir tam sayı giriniz. İşlemi durdurmak için negatif bir tam sayı giriniz."
+      );
+      say = parseFloat(say);
+      sayac = 0;
+      toplam = 0;
+
+      while (say > 0) {
+        sayac++;
+        toplam += say;
+        say = window.prompt("Bir tam sayı giriniz.", "0");
+        say = parseFloat(say);
+      }
+
+      document.write(
+        "<h3>Girdiğiniz pozitif sayıların miktarı: " + sayac + "</h3>"
+      );
+      document.write(
+        "<h3>Girdiğiniz pozitif sayıların toplamı: " + toplam + "</h3>"
+      );
+    </script>
+  </body>
+</html>
