@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Break Example</title>
+  </head>
+
+  <body bgcolor="pink">
+    <script language="javascript">
+      var s, say, ort;
+      var c;
+      s = 0;
+      c = 0;
+
+      window.alert("\nSAYI GİRİŞİNE SON VERMEK İÇİN NEGATİF SAYI GİRİNİZ");
+
+      while (true) {
+        say = parseInt(window.prompt("Bir sayı giriniz: ", "0"));
+        if (say < 0) {
+          break;
+        }
+        s += say;
+        c++;
+      }
+
+      ort = s / c;
+
+      document.write("<h3>Sayıların Toplamı: " + s);
+      document.write("<h3>Sayıların Ortalaması: " + ort);
+      document.write("<h3>Girilen Sayı Miktarı: " + c);
+    </script>
+  </body>
+</html>

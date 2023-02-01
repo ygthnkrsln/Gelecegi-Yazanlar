@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript">
+      var a;
+      document.write("<h3>KARAASLAN TURİZM SUNAR<h3>");
+      document.write("<h3>1. Orta Avrupa Turu<h3>");
+      document.write("<h3>2. Amerika Turu<h3>");
+      document.write("<h3>3. Uzak Doğu Turu<h3>");
+
+      a = window.prompt("Seçiminiz: ");
+
+      switch (parseInt(a)) {
+        case 1: {
+          document.write("<h3>Uçak Viyana(3) Budapeşte(2) Prag(2)<h3>");
+          document.write("<h3>4 * Oteller O.K 1700$<h3>");
+          break;
+        }
+
+        case 2: {
+          document.write("<h3>Uçak New York(4) Boston(2) Los Angeles(4)<h3>");
+          document.write("<h3>5 * Oteller O.K 3700$<h3>");
+          break;
+        }
+
+        case 3: {
+          document.write("<h3>Uçak Bangkok(3) Hong Kong(3) Tokyo(4)<h3>");
+          document.write("<h3>5 * Oteller O.K 4000$<h3>");
+          break;
+        }
+
+        default:
+          window.alert(
+            "Seçiminiz hatalıdır. Lütfen 1, 2 veya 3 seçeneklerinden birini seçiniz."
+          );
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>

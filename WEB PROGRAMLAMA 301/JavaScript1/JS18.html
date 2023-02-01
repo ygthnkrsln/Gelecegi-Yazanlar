@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript First Application</title>
+    <script language="javascript">
+      function Personal(ad, saatUcret) {
+        this.ad = ad;
+        this.saatUcret = saatUcret;
+        this.odeUcret = odeUcret;
+      }
+
+      function odeUcret(saat) {
+        return this.saatUcret * saat;
+      }
+
+      personal1 = new Personal("Hasan", 50);
+      personal2 = new Personal("Berna", 40);
+
+      s1 = parseInt(
+        window.prompt("Birinci personelin çalıştığı saat miktarı: ", "0")
+      );
+      p1 = personal1.odeUcret(s1);
+
+      s2 = parseInt(
+        window.prompt("İkinci personelin çalıştığı saat miktarı: ", "0")
+      );
+      p2 = personal2.odeUcret(s2);
+
+      document.write("<h3>Personelin adı: " + personal1.ad + "<h3>");
+      document.write("<h3>Çalıştığı saat: " + s1 + "</h3>");
+      document.write("<h3>Saat ücreti: " + personal1.saatUcret + "</h3>");
+      document.write("<h3>Alacağı Maaş: " + p1 + "</h3>");
+      document.write("<h3>Personelin adı: " + personal2.ad + "<h3>");
+      document.write("<h3>Çalıştığı saat: " + s2 + "</h3>");
+      document.write("<h3>Saat ücreti: " + personal2.saatUcret + "</h3>");
+      document.write("<h3>Alacağı Maaş: " + p2 + "</h3>");
+    </script>
+  </head>
+  <body></body>
+</html>

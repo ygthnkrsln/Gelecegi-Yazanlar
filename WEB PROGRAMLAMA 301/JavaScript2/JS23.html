@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript İlk Uygulama</title>
+        <h2>20. YY TÜRK EDEBİYATININ ÜNLÜ ŞAİRLERİ</h2>
+    </head>
+
+    <body>
+        <script language="javascript">
+            yazSairler("u", "Attila İlhan", "Melih Cevdet Anday", "Ceyhun Atuf Kansu", "Hilmi Yavuz");
+
+            function yazSairler(par) {
+                document.write("<" + par + "l>");
+                for(var i = 1; i < yazSairler.arguments.length; i++) {
+                    document.write("<li>" + yazSairler.arguments[i]);
+                }
+                document.write("</" + par + "l>")
+            }
+        </script>
+    </body>
+</html>

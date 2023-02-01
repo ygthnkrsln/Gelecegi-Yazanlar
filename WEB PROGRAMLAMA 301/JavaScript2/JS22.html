@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <h3>JavaScript Uygulamaları</h3>
+    <script language="javascript">
+      function factorial(n) {
+        if (n == 0 || n == 1) {
+          return 1;
+        } else {
+          result = n * factorial(n - 1);
+          return result;
+        }
+      }
+
+      for (i = 5; i <= 20; i += 3) {
+        document.write("<h3>" + i + "! = " + factorial(i) + "</h3>");
+      }
+    </script>
+  </body>
+</html>
