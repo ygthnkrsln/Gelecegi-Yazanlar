@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function icerik(kar, lstring) {
+                val = false;
+                for (var i = 1; i <= lstring.length; i++) {
+                    if (lstring.substring(i, i + 1) == kar) {
+                        val = true;
+                        break;
+                    }
+                }
+                return val;
+            }
+
+            function veriKontrol() {
+                if (icerik("@", document.form1.eadres.value)) {
+                    document.form1.submit();
+                } else {
+                    alert("Lütfen geçerli bir e-posta adresi giriniz.")
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body bgcolor="lightgreen">
+        <font face="Comic Sans MS">
+            <h3>E-Posta Adresi Kontrolü</h3>
+            <form name="form1">
+                <b>E-Mail adresinizi giriniz: </b>
+                <input type="text" name="eadres">
+                <input type="button" value="Gönder" name="button1" onclick="verikontrol()">
+            </form>
+        </font>
+    </body>
+</html>

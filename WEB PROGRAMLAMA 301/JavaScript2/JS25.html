@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date Example</title>
+  </head>
+
+  <body bgcolor="lightgreen">
+    <font face="Comic Sans MS">
+      <script language="javascript">
+        var now = new Date();
+        var monthName = now.getMonth + 1;
+        var dayName = now.getDay + 1;
+
+        document.write("<h3>" + now + "</h3>");
+
+        if (now.getDate() < 10) {
+          dayNo = "0" + now.getDate();
+        } else {
+          dayNo = now.getDate();
+        }
+
+        if (dayName == 1) day = "Pazar";
+        if (dayName == 2) day = "Pazartesi";
+        if (dayName == 3) day = "Salı";
+        if (dayName == 4) day = "Çarşamba";
+        if (dayName == 5) day = "Perşembe";
+        if (dayName == 6) day = "Cuma";
+        if (dayName == 7) day = "Cumartesi";
+
+        if (monthName == 1) month = "Ocak";
+        if (monthName == 2) month = "Şubat";
+        if (monthName == 3) month = "Mart";
+        if (monthName == 4) month = "Nisan";
+        if (monthName == 5) month = "Mayıs";
+        if (monthName == 6) month = "Haziran";
+        if (monthName == 7) month = "Temmuz";
+        if (monthName == 8) month = "Ağustos";
+        if (monthName == 9) month = "Eylül";
+        if (monthName == 10) month = "Ekim";
+        if (monthName == 11) month = "Kasım";
+        if (monthName == 12) month = "Aralık";
+
+        var todayDate = " " + dayNo + " " + month + " " + day;
+
+        document.open();
+        document.write("<font size=+1><b> Bugün: " + todayDate + "</b></font>");
+      </script>
+    </font>
+  </body>
+</html>

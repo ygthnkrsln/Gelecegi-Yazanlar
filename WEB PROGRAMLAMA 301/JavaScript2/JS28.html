@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Nesnesi - Örnek</title>
+  </head>
+
+  <script>
+    function degis(d) {
+      if (d == "buyuk") {
+        document.form1.ad.value = document.form1.ad.value.toUpperCase();
+        document.form1.soyad.value = document.form1.soyad.value.toUpperCase();
+      } else {
+        document.form1.ad.value = document.form1.ad.value.toLowerCase();
+        document.form1.soyad.value = document.form1.soyad.value.toLowerCase();
+      }
+    }
+  </script>
+
+  <body bgcolor="lightblue">
+    <font face="Comic Sans MS">
+      <h3>Form Uygulaması</h3>
+    </font>
+
+    <form name="form1">
+      <b>AD: <input type="text" name="ad" size="20" /></b>
+      <br />
+      <b>SOYAD: <input type="text" name="soyad" size="20" /></b>
+      <br />
+
+      <input
+        type="button"
+        value="Büyük Harf"
+        name="buyukharf"
+        onclick="degis('buyuk')"
+      />
+      <input
+        type="button"
+        value="Küçük Harf"
+        name="kucukharf"
+        onclick="degis('kucuk')"
+      />
+    </form>
+  </body>
+</html>
