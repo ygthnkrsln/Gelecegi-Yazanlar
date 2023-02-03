@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript">
+      function goster() {
+        var m = "";
+
+        if (document.ReaderInfo.cins[0].checked) {
+          m = "Kadın";
+        }
+
+        if (document.ReaderInfo.cins[1].checked) {
+          m = "Erkek";
+        }
+
+        alert("Seçilen cinsiyet: " + m);
+      }
+    </script>
+  </head>
+
+  <body bgcolor="lightblue" fgColor="red">
+    <font face="Comic Sans MS">
+      <h3>Cinsiyeti Seçiniz.</h3>
+      <form name="ReaderInfo">
+        <input type="radio" name="cins" value="Kadın" />Kadın<br />
+        <input type="radio" name="cins" value="Erkek" />Erkek<br />
+        <input type="button" value="Tıkla" onclick="goster()" />
+      </form>
+    </font>
+  </body>
+</html>

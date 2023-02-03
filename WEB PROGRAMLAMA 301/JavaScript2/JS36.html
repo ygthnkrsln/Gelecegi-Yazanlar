@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>İçindkeiler</title>
+  </head>
+
+  <body bgcolor="lightblue" text="darkblue">
+    <script lanugage="javascript">
+      function hes1(a) {
+        a *= 5;
+        document.write("<h4>a = " + a + "</h4>");
+      }
+
+      var x = [3, 6, 9, 12, 15];
+
+      document.write("<h4>FONKSİYONU ÇAĞIRMADAN ÖNCE X DİZİSİ</h4>");
+
+      for (var b in x) {
+        document.write("<h4>x[" + b + "] = " + x[b] + "</h4>");
+      }
+
+      for (var i in x) {
+        hes1(x[i]);
+      }
+
+      document.write("<h4>FONKSİYONU ÇAĞIRDIKTAN SONRA X DİZİSİ</h4>");
+
+      for (var b in x) {
+        document.write("<h4>x[" + b + "] = " + x[b] + "</h4>");
+      }
+    </script>
+  </body>
+</html>

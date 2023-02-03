@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>İçindekiler</title>
+  </head>
+
+  <body bgcolor="lightblue" text="darkblue">
+    <script language="javascript">
+      function hes(y) {
+        for (var a in y) {
+          y[a] = y[a] - 4;
+        }
+      }
+
+      var x = [3, 6, 9, 12, 15];
+
+      document.write("<h4> X DİZİSİ</h4>");
+      document.write("<h4> " + x.join(" | ") + "</h4>");
+
+      document.write("<h4>FONKSİYONU ÇAĞIRMADAN ÖNCE X DİZİSİ</h4>");
+
+      for (var b in x) {
+        document.write("<h4>x[" + b + "] = " + x[b] + "</h4>");
+      }
+
+      hes(x);
+
+      document.write("<h4>FONKSİYONU ÇAĞIRDIKTAN SONRA X DİZİSİ</h4>");
+
+      for (var b in x) {
+        document.write("<h4>x[" + b + "] = " + x[b] + "</h4>");
+      }
+    </script>
+  </body>
+</html>

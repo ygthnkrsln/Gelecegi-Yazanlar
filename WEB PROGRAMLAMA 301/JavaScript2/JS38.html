@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exchange Sort</title>
+  </head>
+
+  <body bgcolor="lightblue" text="darkblue">
+    <script language="javascript">
+      function SIRALAEXC(a) {
+        var i, j, t;
+        i = 0;
+
+        while (i < a.length - 1) {
+          j = i + 1;
+
+          while (j < a.length - 1) {
+            if (a[i] > a[j]) {
+              t = a[i];
+              a[i] = a[j];
+              a[j] = t;
+            }
+            j++;
+          }
+          i++;
+        }
+      }
+
+      var dizi = [10, 23, 8, 253, 191, 711, 2, 27, 1, 813];
+
+      document.write("<h3>" + "SIRALAMA İŞLEMİNDEN ÖNCEKİ DİZİ" + "</h3>");
+      document.write("<h3>" + dizi.join("  ") + "</h3>");
+
+      SIRALAEXC(dizi);
+
+      document.write("<h3>" + "SIRALAMA İŞLEMİNDEN SONRAKİ DİZİ" + "</h3>");
+      document.write("<h3>" + dizi.join("  ") + "</h3>");
+    </script>
+  </body>
+</html>

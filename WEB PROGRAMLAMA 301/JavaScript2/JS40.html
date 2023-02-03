@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quicksort</title>
+  </head>
+
+  <body bgcolor="lightpink" text="darkblue">
+    <script language="javascript">
+      var a = new Array(11);
+
+      function HIZLI_SIRALA(a, sol, sag) {
+        var dur, son, u;
+
+        if (sol >= sag) {
+          return;
+        }
+
+        u = Math.floor((sol + sag) / 2);
+        DEGIS(a, sol, u);
+
+        son = sol;
+
+        for (dur = sol + 1; dur <= sag; dur++)
+          if (a[dur] < a[sol]) DEGIS(a, ++son, dur);
+        DEGIS(a, sol, son);
+        HIZLI_SIRALA(a, sol, son - 1);
+        HIZLI_SIRALA(a, son + 1, sag);
+      }
+
+      function DEGIS(a, i, j) {
+        var t;
+
+        t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+      }
+
+      document.write("<h3>QUİCKSORT SIRALAMA ALGORİTMASI</h3>");
+      document.write("<h3>SIRALAMA İŞLEMİNDEN ÖNCEKİ DİZİ</h3>");
+      document.writeln("<table border = '2' width = '50%'>");
+      document.writeln(
+        "<tr><td width = '80'><b>İNDİS</b>" + "<td><b>DEĞER</b></tr>"
+      );
+
+      for (i = 0; i < a.length; i++) {
+        a[i] = Math.floor(1 + Math.random() * 10000);
+        document.writeln("<tr><td>" + i + "<td>" + a[i] + "</tr>");
+      }
+
+      document.writeln("</table>");
+
+      HIZLI_SIRALA(a, 0, a.length - 1);
+
+      document.write("<h3>SIRALAMA İŞLEMİNDEN ÖNCEKİ DİZİ</h3>");
+      document.writeln("<table border = '2' width = '50%'>");
+      document.writeln(
+        "<tr><td width = '80'><b>İNDİS</b>" + "<td><b>DEĞER</b></tr>"
+      );
+
+      for (i = 0; i < a.length; i++) {
+        document.writeln("<tr><td>" + i + "<td>" + a[i] + "</tr>");
+      }
+
+      document.writeln("</table>");
+    </script>
+  </body>
+</html>

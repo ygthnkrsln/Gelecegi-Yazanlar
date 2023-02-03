@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<script language="javascript">
+  var veri = false;
+
+  function kontrol() {
+        str = "Geleceği Yazanlar web sayfasına erişmek istiyor musunuz?";
+        if (confirm(str)) {
+          location.href = "https://gelecegiyazanlar.turkcell.com.tr";
+        }
+      }
+  
+  function sec(s) {
+    return s.options[s.selectedIndex].value;
+  }
+
+  function veriKontrol() {
+    if (document.form1.kar.value.length == 5) {
+      return true;
+    } else {
+      alert(
+        "Tam olarak 5 karakter giriniz. " +
+          document.form1.kar.value +
+          " karakter geçerli değil."
+      );
+      return false;
+    }
+  }
+</script>
+
+<html>
+  <head>
+    <title>JavaScript Events</title>
+  </head>
+
+  <body>
+    <font face="Comic Sans MS">
+      <center>
+        <h1>JavaScript Events</h1>
+        <h2>Confirm Diyalog Kutusu</h2>
+        <form>
+          <input
+            type="button"
+            value="Geleceği Yazanlar Ana Sayfası"
+            onclick="kontrol()"
+          />
+        </form>
+      </center>
+      <hr size="3" color="black";
+      
+      <h2>onMouseOver Uygulaması</h2>
+      <a
+        href=""
+        onmouseover="alert('Bu örnek \n onmouseover \n olayını gösteriyor.'); return false;"
+      >
+        Mouse göstergesini buraya konumlandırınız.
+      </a>
+      <hr size="3" color="black" />
+
+      <h2>Focus Uygulaması</h2>
+      <form>
+        <input
+          type="text"
+          size="20"
+          onfocus="document.write('Focus burada.'); return true"
+        />
+      </form>
+      <hr size="3" color="black" />
+
+      <h2>onChange Uygulaması</h2>
+      <form>
+        <select name="list" size="1" onchange="location = sec(this)">
+          <option value="#">Bir arama motoru seçiniz.</option>
+          <option value="http://www.google.com">Google</option>
+          <option value="http://www.yahoo.com">Yahoo</option>
+          <option value="http://www.yandex.com">Yandex</option>
+        </select>
+      </form>
+      <hr size="3" color="black" />
+
+      <h2>onSubmit Uygulaması</h2>
+      <form name="form1" onsubmit="return verikontrol()">
+        <b>5 karakter giriniz: <input type="text" name="kar" size="5" /></b>
+        <p>
+          <input
+            type="submit"
+            value="Karakterler girildi."
+            name="submit1"
+            onclick="document.form1.kar.value = document.form1.kar.value.toUpperCase()"
+          />
+        </p>
+      </form>
+    </font>
+  </body>
+</html>

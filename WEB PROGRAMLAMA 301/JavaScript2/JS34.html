@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body bgcolor="pink" text="blue">
+    <script language="javascript">
+      var sayi, t, i;
+      sayi = new Array(6);
+      t = 0;
+
+      document.writeln("<table border = '2' width = '50%'>");
+      document.writeln(
+        "<tr><td width='80'><b>İNDİS</b>" + "<td><b>DEĞER</b></tr>"
+      );
+
+      for (i = 0; i < sayi.length; i++) {
+        sayi[i] = Math.floor(1 + Math.random() * 10);
+        document.writeln("<tr><td>" + i + "<td>" + sayi[i] + "</tr>");
+        t += sayi[i];
+      }
+
+      document.writeln("</table>");
+      document.write("<h3>TOPLAM = " + t + "</h3>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bubble Sort</title>
+    </head>
+
+    <body bgcolor="lightblue" text="darkblue">
+        <script language="javascript">
+            var a = [34, 5, 11, 9, 76, 43, 77, 789, 51, 10];
+            var i;
+            var t, f;
+
+            document.write("<h3>SIRALAMADAN ÖNCEKİ DİZİ</h3>");
+            document.write("<h3>" + a.join("  ") + "</h3>");
+
+            f = 0;
+
+            while (f == 0) {
+                f = 1;
+
+                for (i = 0; i <= a.length - 1; i++) {
+                    if (a[i] > a[i + 1]) {
+                        t = a[i];
+                        a[i] = a[i + 1];
+                        a[i + 1] = t;
+                        f = 0;
+                    }
+                }
+            }
+
+            document.write("<h3>SIRALAMADAN SONRAKİ DİZİ</h3>");
+            document.write("<h3>" + a.join("  ") + "</h3>");
+        </script>
+    </body>
+</html>
