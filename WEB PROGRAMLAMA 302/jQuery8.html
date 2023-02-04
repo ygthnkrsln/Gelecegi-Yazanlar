@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideDown("slow");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#ff").click(function () {
+          $("#panel").slideUp("slow");
+        });
+      });
+    </script>
+
+    <style>
+      #panel,
+      #flip,
+      #ff {
+        padding: 7px;
+        text-align: center;
+        background-color: #e5eefc;
+        border: solid 2px #c3c4c3;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="flip">PANELİ İNDİRMEK İÇİN TIKLA</div>
+    <div id="panel">Geleceği Yazıyorum</div>
+    <div id="ff">PANELİ KALDIRMAK İÇİN TIKLA</div>
+  </body>
+</html>

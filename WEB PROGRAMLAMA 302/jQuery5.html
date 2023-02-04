@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button1").click(function () {
+          $("#x1").fadeIn();
+          $("#x2").fadeIn("slow");
+          $("#x3").fadeIn(1000);
+        });
+      });
+
+      $(document).ready(function () {
+        $("button2").click(function () {
+          $("#x1").fadeOut();
+          $("#x2").fadeOut("slow");
+          $("#x3").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <p></p>
+    <p>fadeIn() - ÇEŞİTLİ PARAMETRELERLE DEMO</p>
+    <button1>KUTULARI GETİRMEK İÇİN TIKLA</button1>
+    <br /><br />
+    <button2>KUTULARI GÖTÜRMEK İÇİN TIKLA</button2>
+    <br /><br />
+    <div
+      id="x1"
+      style="width: 60px; height: 70px; display: none; background-color: pink"
+    ></div>
+    <br />
+    <div
+      id="x2"
+      style="width: 60px; height: 70px; display: none; background-color: gray"
+    ></div>
+    <br />
+    <div
+      id="x3"
+      style="width: 60px; height: 70px; display: none; background-color: red"
+    ></div>
+  </body>
+</html>

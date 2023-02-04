@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#x1").fadeToggle();
+          $("#x2").fadeToggle("slow");
+          $("#x3").fadeToggle(1000);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <p>fadeToggle() : fadeIn() ve fadeOut() arasında gidiş-geliş</p>
+    <button>GEÇİŞLER İÇİN TIKLA</button>
+    <br /><br />
+
+    <div
+      id="x1"
+      style="width: 40px; height: 40px; background-color: lightblue"
+    ></div>
+    <br />
+    <div
+      id="x2"
+      style="width: 40px; height: 40px; background-color: lightgreen"
+    ></div>
+    <br />
+    <div
+      id="x3"
+      style="width: 40px; height: 40px; background-color: lightsalmon"
+    ></div>
+    <br />
+  </body>
+</html>

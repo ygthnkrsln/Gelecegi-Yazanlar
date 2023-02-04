@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#x1").fadeTo("slow", 0.1);
+          $("#x2").fadeTo("slow", 0.44);
+          $("#x3").fadeTo("slow", 0.65);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <p>fadeTo(): FARKLI SAYDAMLIK DERECELERİ</p>
+    <button>TIKLA</button>
+    <br /><br />
+
+    <div
+      id="x1"
+      style="width: 50px; height: 20px; background-color: lightcoral"
+    ></div>
+    <br />
+    <div
+      id="x2"
+      style="width: 50px; height: 20px; background-color: lightseagreen"
+    ></div>
+    <br />
+    <div
+      id="x3"
+      style="width: 50px; height: 20px; background-color: lightblue"
+    ></div>
+  </body>
+</html>
