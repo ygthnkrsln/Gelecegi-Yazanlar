@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideDown(4000);
+        });
+
+        $("#stop").click(function () {
+          $("#panel").stop();
+        });
+      });
+    </script>
+
+    <style>
+      #panel,
+      #flip {
+        padding: 7px;
+        text-align: center;
+        background-color: #e5effc;
+        border: solid 1px #c3cff3;
+      }
+
+      #panel {
+        padding: 60px;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="stop">KAYDIRMAYI DURDUR</button>
+    <div id="flip">PANELİ AŞAĞIYA DOĞRU KAYDIR</div>
+    <div id="panel">HAREKETLİ PANEL</div>
+  </body>
+</html>

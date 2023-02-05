@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#test1").text(function (i, origText) {
+            return (
+              "ESKİ METİN: " +
+              origText +
+              "\nYENİ METİN: TURKCELL GELECEĞİ YAZANLAR"
+            );
+          });
+
+          $("#btn2").click(function () {
+            $("#test2").html(function (i, origText) {
+              return (
+                "ESKİ HTML: " +
+                origText +
+                "\nYENİ HTML: TURKCELL GELECEĞİ YAZANLAR 2023"
+              );
+            });
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <p id="test1">GELECEĞİ YAZANLAR</p>
+    <p id="test2">GELECEĞİ YAZANLAR</p>
+    <button id="btn1">ESKİ/YENİ METİN</button>
+    <button id="btn2">ESKİ/YENİ HTML</button>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("div").animate({
+            left: "240px",
+            opacity: "+=0.1",
+            height: "toggle",
+            width: "+=15px",
+          });
+        });
+      });
+    </script>
+
+    <style>
+      div {
+        background: #56aaaa;
+        height: 110px;
+        width: 80px;
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>BAŞLA</button>
+    <div></div>
+  </body>
+</html>

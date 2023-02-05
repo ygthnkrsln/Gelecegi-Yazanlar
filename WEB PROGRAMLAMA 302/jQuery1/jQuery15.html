@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#button1").click(function () {
+          $("#p1").hide("slow", function () {
+            alert("1. PARAGRAF GİZLENMİŞTİR.");
+          });
+        });
+
+        $("#button2").click(function () {
+          $("#p2").hide(900);
+          alert("BU BİLDİRİME TAMAM DEDİĞİNİZDE 2. PARAGRAF GİZLENECEKTİR.");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <button id="button1">GİZLE</button>
+    <button id="button2">GERİÇAĞIRMA OLMADAN GİZLE</button>
+    <p id="p1">Turkcell'le bağlan hayata!</p>
+    <p id="p2">Merhaba Dünya</p>
+  </body>
+</html>
