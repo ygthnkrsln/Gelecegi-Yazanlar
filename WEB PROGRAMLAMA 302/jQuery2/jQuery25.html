@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      function appendText() {
+        var metin1 = "<p>Metin.</p>";
+        var metin2 = $("<p></p>").text("Metin.");
+        var metin3 = document.createElement("p");
+        metin3.innerHTML = "Metin.";
+        $("body").append(metin1, metin2, metin3);
+      }
+    </script>
+  </head>
+
+  <body>
+    <p>İLK SATIR</p>
+    <button onclick="appendText()">METİN EKLE</button>
+  </body>
+</html>

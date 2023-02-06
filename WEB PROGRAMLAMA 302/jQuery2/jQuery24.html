@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").prepend("<b>ÖNE EKLENEN METİN ");
+        });
+
+        $("#btn2").click(function () {
+          $("ol").prepend("<li>ÖNE EKLENEN LİSTE ELEMANI</li>");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <p>BİRİNCİ SATIR</p>
+    <p>İKİNCİ SATIR</p>
+
+    <ol>
+      <li>LİSTE ELEMANI 1</li>
+      <li>LİSTE ELEMANI 2</li>
+      <li>LİSTE ELEMANI 3</li>
+    </ol>
+
+    <button id="btn1">ÖNE METİN EKLE</button>
+    <button id="btn2">ÖNE LİSTE ELEMANI EKLE</button>
+  </body>
+</html>

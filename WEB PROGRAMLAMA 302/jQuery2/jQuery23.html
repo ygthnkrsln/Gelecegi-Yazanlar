@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").append(" <b>EKLENEN METİN");
+        });
+
+        $("#btn2").click(function () {
+          $("ol").append("<li>EKLENEN ELEMAN</li>");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <p>BİRİNCİ SATIR</p>
+    <p>İKİNCİ SATIR</p>
+
+    <ol>
+      <li>1. LİSTE ELEMANI</li>
+      <li>2. LİSTE ELEMANI</li>
+      <li>3. LİSTE ELEMANI</li>
+    </ol>
+    <button id="btn1">METİN EKLE</button>
+    <button id="btn2">LİSTE ELEMANI EKLE</button>
+  </body>
+</html>

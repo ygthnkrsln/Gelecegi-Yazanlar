@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("img").before("<b>ÖNCE </b>");
+        });
+
+        $("#btn2").click(function () {
+          $("img").after("<i> SONRA</i>");
+        });
+      });
+
+      function afterText() {
+        var metin1 = "<b> BOĞAZİÇİ </b>";
+        var metin2 = $("<i></i>").text("SEN");
+        var metin3 = document.createElement("b");
+        metin3.innerHTML = " GÖNÜLLER DİYARI";
+        $("img").after(metin1, metin2, metin3);
+      }
+    </script>
+  </head>
+
+  <body>
+    <img
+      src="https://gelecegiyazanlar.turkcell.com.tr/sites/default/files/styles/slide_image/public/ios_1.jpg?itok=dRAA8s8X"
+      alt="jQuery"
+      width="80"
+      height="90"
+    />
+    <br /><br />
+    <button id="btn1">ÖNCE EKLE</button>
+    <button id="btn2">SONRA EKLE</button>
+    <hr size="3" color="lightblue" />
+
+    <p>RESİMDEN SONRA EKLE</p>
+    <button onclick="afterText()">SONRA EKLE</button>
+  </body>
+</html>
